@@ -166,12 +166,16 @@
             <url>https://repo.spring.io/libs-release</url>
         </pluginRepository>
     </pluginRepositories>
-    
-    <dependencyManagement>
-		<dependencies>
-
-		</dependencies>
-
-	</dependencyManagement>
-
+	<!-- Configure Sonar Plugins details -->
+  <build> 
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>2.7.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+	</build>
 </project>
